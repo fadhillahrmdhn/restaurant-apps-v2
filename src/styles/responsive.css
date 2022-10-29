@@ -1,0 +1,204 @@
+.posts {
+    display: grid;
+    grid-row-gap: 16px;
+  }
+
+  @media screen and (max-width: 499px) {
+    .nav {
+      margin-top: -10px;
+      z-index: 10;
+      background-color: #fff;
+      width: 300px;
+      position: absolute;
+  
+      /* This trasform moves the drawer off canvas. */
+      -webkit-transform: translate(-300px, 0);
+      transform: translate(-300px, 0);
+  
+      /* Optionally, we animate the drawer. */
+      transition: transform 0.3s ease;
+    }
+    .detailrestaurant .restaurant__poster {
+      padding-top: 0;
+    }
+
+    .detailrestaurant .restaurant__info{
+      padding: 0 13px;
+    }
+    .detailrestaurant .restaurant__overview{
+      padding: 0 13px;
+    }
+    .detailrestaurant .restaurant__info h2 {
+      font-size: 6.5vw;
+    } 
+    .detailrestaurant .restaurant__info h4 {
+      font-size: 4.5vw;
+    } 
+    .titlemenu{
+      font-size: 5.4vw;
+      }
+      .food h4{
+        font-size: 4.6vw;
+      }
+      .food ul li{
+        font-size: 4.4vw;
+      }
+
+      .drink h4{
+        font-size: 4.6vw;
+      }
+      .drink ul li{
+        font-size: 4.4vw;
+      }
+      .description h4{
+        font-size: 5.5vw;
+      }
+      .description p{
+        font-size:  4.3vw;
+      }
+      .review h4{
+        font-size: 5.5vw;
+      }
+      .review p{
+        font-size: 4.1vw;
+      }
+      
+      
+  
+  .open {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      background-color: rgb(255, 255, 255);
+      margin-top: -10px;
+      width: 100%;
+    }
+
+    .nav__item {
+      display: list-item;
+      border-bottom: 1px solid #E0E0E0;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* #maincontent .hero{
+      margin-top: -10px;
+    } */
+
+    .nav a {
+      color: #000000;
+    }
+    
+    .nav a:hover {
+      color: #7e481c;
+    }
+  }
+  
+  @media screen and (min-width: 500px) {
+    .header__menu {
+      display: none;
+    }
+    .detailrestaurant .restaurant__poster {
+      padding-top: 0;
+    }
+    .detailrestaurant .restaurant__info{
+      padding: 0 13px;
+    }
+    .detailrestaurant .restaurant__overview{
+      padding: 0 13px;
+    }
+
+  }
+
+  @media screen and (min-width: 600px) {
+    #maincontent .hero__title {
+      font-size: 6vw;
+    }
+    
+    #maincontent .hero__tagline {
+      font-size: 2vw;
+    }
+
+    .detailrestaurant .restaurant__poster {
+      padding-top: 13px;
+    }
+
+    #maincontent .hero {
+      /* background-image: url("./images/hero-image_2-large.jpg"); */
+      /* background-image: url("../../dist/images/hero-image_2-large.jpg"); */
+    }
+  }
+
+  @media screen and (min-width: 650px) {
+    .headline__content {
+      margin: 0 auto;
+      max-width: 650px;
+    }
+  
+    .post-item__content {
+      padding: 16px 32px 32px 32px;
+    }
+  
+    .post-item__title {
+      font-size: 18px;
+    }
+  
+
+    .posts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 11px;
+      grid-row-gap: 16px;
+    }
+  }
+
+
+  @media screen and (min-width: 800px) {
+    .nav__list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .posts {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    main {
+      max-width: 1200px;
+    }
+
+    .header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .header__inner {
+      width: 100%;
+      text-align: left;
+    }
+
+    .nav {
+      width: 100%;
+      text-align: right;
+    }
+
+    .nav__list {
+      max-width: 800px;
+      margin: 0 ;
+      padding-top: 3px;
+    }
+
+    .nav a {
+      font-size: 15px;
+    }
+
+    .post-item__description {
+      font-size: 13px;
+    }
+    
+  }
