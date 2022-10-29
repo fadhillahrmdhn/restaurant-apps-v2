@@ -1,1 +1,1 @@
-# restaurAnt-apps-v2
+# restaurant-apps-v2
